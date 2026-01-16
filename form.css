@@ -10,3 +10,22 @@ form legend:first-of-type{
   color: var(--text-heading);
   font: var(--font-heading-sm-complete);
 }
+.dates{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 1rem;
+  
+}
+.dates label{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.start-wrapper{
+  grid-column: 1/2;
+  grid-row: 1;
+}
+.end-wrapper{
+  grid-column: 2/2;
+  grid-row: 1;
+}
