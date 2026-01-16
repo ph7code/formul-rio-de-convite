@@ -9,4 +9,6 @@ main{
 }
 main h1{
   margin-bottom: 2.5rem;
+  color: var(--text-heading);
+  font: var(--font-heading-md-complete);
 }

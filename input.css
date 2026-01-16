@@ -12,4 +12,11 @@ input{
   color: var(--text-heading);
   font: var(--font-body-md);
   border-radius: 0.5rem;
+  outline: none;
+
+  &[type="text"], [type="textarea"]{
+    &:hover,&:focus-within{
+      border: 1px solid var(--brand-light);
+    }
+  }
 }
