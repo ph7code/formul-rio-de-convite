@@ -1,0 +1,12 @@
+form{
+  max-width: 35rem;
+  width: 100%;
+}
+form legend:first-of-type{
+  display: flex;
+  align-items: center;
+  gap: 0.875rem;
+  margin-bottom: 1.5rem;
+  color: var(--text-heading);
+  font: var(--font-heading-sm-complete);
+}

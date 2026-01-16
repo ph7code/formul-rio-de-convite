@@ -1,0 +1,26 @@
+.aside{
+  position: relative;
+}
+.aside-image img{
+  border-radius: 1rem;
+}
+.aside section{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+}
+.aside section img{
+  max-width: 2.8rem;
+  max-height: 3rem;
+  margin-bottom: 1rem;
+}
+.aside h1{
+  font: var(--font-logo);
+  color: var(--pink);
+}
+.aside p{
+  font: var(--font-body-md-semibold);
+  color: var(--text-body);
+}

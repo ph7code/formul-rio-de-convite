@@ -1,0 +1,15 @@
+label{
+  display: inline-block;
+  margin-bottom: 0.75rem;
+  color: var(--text-body);
+  font: var(--font-body-sm-complete);
+}
+input{
+  background-color: var(--input-base);
+  border: 1px solid var(--input-stroke);
+  width: 100%;
+  padding: 0.85rem;
+  color: var(--text-heading);
+  font: var(--font-body-md);
+  border-radius: 0.5rem;
+}
