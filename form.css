@@ -19,7 +19,7 @@ form legend:first-of-type{
 }
 .dates label{
   margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.85rem;
 }
 .start-wrapper{
   grid-column: 1/2;
@@ -28,4 +28,64 @@ form legend:first-of-type{
 .end-wrapper{
   grid-column: 2/2;
   grid-row: 1;
+}
+.ensinos{
+  margin-top: 1rem;
+  display: grid;
+    grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 1rem;
+}
+.control-group span{
+  display: inline-block;
+  color: var(--text-body);
+  font: var(--font-body-sm-complete);
+  margin-bottom: 0.75rem;
+}
+.segmente-control{
+  display: flex;
+  background-color: var(--input-base);
+  justify-content: space-evenly;
+
+  padding: 0.4rem;
+  border: 1px solid var(--input-stroke);
+  border-radius: 0.5rem;
+
+}
+.segmente-control img{
+  width: 1rem;
+  height: 1rem;
+}
+.segmente-control input[type="radio"] {
+  display: none;
+  
+}
+
+
+.segmente-control label {
+  flex: 1;
+  padding: 0.5rem 1rem;              
+  color: #919eab;                
+  font-size: 14px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 8px;                       
+  z-index: 2;                     
+  transition: color 0.3s ease;
+  margin-bottom: 0px;
+}
+
+
+
+.segmente-control input[type="radio"]:checked + label {
+  color: #ffffff;             
+  background-color: #2f3336;   
+  border-radius: 4px;    
+}
+
+
+.segmente-control input[type="radio"]:checked + label i,
+.segmente-control input[type="radio"]:checked + label svg {
+  color: #007bff;               
 }
