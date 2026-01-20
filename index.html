@@ -23,7 +23,7 @@
         <form>
           <section class="event-info">
             <form>
-              <legend> <img src="/globals css/assets/calendar.svg" alt="calendario">Sobre o evento</legend>
+              <legend> <img src="/globals-css/assets/calendar.svg" alt="calendario">Sobre o evento</legend>
               <div class="input-wrapper">
                 <label for="tittle">Titulo</label>
                 <input type="text" id="tittle" name="tittle" placeholder="Nome do evento">
@@ -42,15 +42,29 @@
                   <div class="control-group">
                     <span>Tipo</span>
                     <div class="segmente-control input-wrapper">
-                      <input type="radio" name="tipo_evento" id="opt-presencial" checked>
-                      <label for="opt-presencial">
-                        <img src="/globals css/assets/building-2.svg" alt="predio-presencial">
-                        Presencial
+                      <input class="opt-presencial" type="radio" name="tipo_evento" id="opt-presencial" checked>
+                      <label class="opt-presencial" for="opt-presencial">
+                          <div class="icone-predio">
+                          <div class="predio-image">
+                          </div> 
+                          <div>
+                            Presencial
+                          </div>
+                        </div>
+                      
                       </label>
                       
-                      <input type="radio" name="tipo_evento" id="opt-online">
-                      <label for="opt-online">
-                        <img src="/globals css/assets/video.svg" alt="camera-online"> Online
+                      <input class="opt-online" type="radio" name="tipo_evento" id="opt-online">
+                      <label class="opt-online" for="opt-online">
+                        
+                        <div class="icone-video">
+                          <div class="video-image">
+                          
+                          </div> 
+                          <div>
+                            Online
+                          </div>
+                        </div>
                       </label>
                     </div>
                   </div>
@@ -59,6 +73,10 @@
                     <input type="text" id="local" name="local" placeholder="Local ou endereço">
                   </div>
                 </div>
+              </div>
+              <div class="textarea-wrapper">
+                <label for="discription">Descrição</label>
+                <textarea id="discription" name="discription" rows="7" placeholder="Escreva detalhes do evento"></textarea>
               </div>
             </form>
           </section>
@@ -71,10 +89,10 @@
       <div class="aside">
         <aside>
           <div class="aside-image">
-            <img src="/globals css/assets/Background.jpg">
+            <img src="/globals-css/assets/Background.jpg">
           </div>
           <section>
-            <img src="/globals css/assets/background-logo.svg">
+            <img src="/globals-css/assets/background-logo.svg">
             <h1>Festivite</h1>
             <p>Crie um convite digital para o seu evento</p>
           </section>
