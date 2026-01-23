@@ -4,7 +4,6 @@ main{
   background-color: var(--shape-body);
   border-radius: .75rem;
   padding: 5rem;
-  align-items: center;
   width: 100vh
 }
 main h1{
