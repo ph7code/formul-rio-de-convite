@@ -1,3 +1,4 @@
+
 form{
   max-width: 35rem;
   width: 100%;
@@ -162,8 +163,9 @@ textarea{
 .radio-wrapper{
   display: flex;
   justify-content: space-between;
+  margin-bottom: 3rem;
 }
-input[type="radio"]{
+.radio-wrapper input[type="radio"]{
   appearance: none;
   width: 1.75rem;
   height: 1.75rem;
@@ -185,3 +187,48 @@ input[type="radio"]{
 .radio-wrapper input[type="radio"]:nth-child(9) { background-color: var(--lime); }
 .radio-wrapper input[type="radio"]:nth-child(10) { background-color: var(--green); }
 .radio-wrapper input[type="radio"]:nth-child(11) { background-color: var(--cyan); }
+
+.event-theme fieldset{
+  max-width: 35rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0.5rem;
+}
+.article-wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--shape-button);
+  height: 8rem;
+  border-radius: 0.5rem;
+  position: relative;
+  padding: 0.3rem;
+}
+.article-wrapper input[type="radio"]{
+   position: absolute; /* Sai do fluxo e ignora os outros elementos */
+  top: 0;
+  left: 0;
+  width: 100%; /* Ocupa toda a largura do article */
+  height: 100%; /* Ocupa toda a altura do article */
+  margin: 0;
+  opacity: 0; /* Torna o círculo original invisível */
+  cursor: pointer;
+  z-index: 10; /* Garante que ele esteja ACIMA da imagem e do texto */
+}
+.article-wrapper:has(input[type="radio"]:checked){
+  border: 2px solid var(--brand-light);
+}
+.article-wrapper label{
+  margin: auto;
+  
+}
+.article-wrapper img{
+  width: 100%;
+}
+
+.article-wrapper article{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
