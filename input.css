@@ -26,3 +26,28 @@ input[type="datetime-local"]{
     display: none;
   }
 }
+.droparea-wrapper label{
+  position: relative;
+  & span{
+    
+  }
+}
+.droparea-wrapper input[type="file"]{
+  border: none;
+  background-color: var(--shape-body);
+  padding: 0;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+.droparea-input::file-selector-button{
+  background-color: var(--shape-button);
+  border: none;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  color: var(--text-heading);
+  background-image: url(/globals-css/assets2/upload.svg);
+  background-repeat: no-repeat;
+  background-position: 0.75rem center;
+  background-size: 1rem;
+  padding-left: 40px;
+}
