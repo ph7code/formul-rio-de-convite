@@ -208,7 +208,11 @@
               <legend> <img src="/globals-css/assets2/contact.svg" alt="imagem de contato"> Dados para contato</legend>
               <div class="input-wrapper">
                 <label for="name">Nome</label>
-                <input type="text" id="name" placeholder="Nome completo" >
+                <input type="text" id="name" placeholder="Nome completo" required>
+                <div class="error">
+                  <img src="/globals-css//assets2/circle-alert.svg" alt="alerta vermelho">
+                  <span>Campo Obrigatorio</span>
+                </div>
               </div>
               <div class="dates contact">
                 <div class="input-wrapper">
@@ -222,7 +226,14 @@
               </div>
             </form>
           </section>
-          <footer></footer>
+          <footer>
+            <div>
+              <label for="terms" class="terms-condition"><input type="checkbox" id="terms-condition" name="terms"><span>Li e concordo com os <a href="#">Termos e Condições</a> e com a <a href="#">Política de Privacidade</a></span></label>
+              <label for="att-email"><input type="checkbox" id="att-email" name="att-email"><span>Aceito receber atualizações e promoções por e-mail</span></label>
+              <label for="att-tel"> <input type="checkbox" id="att-tel" name="att-tel"><span>Aceito receber atualizações e promoções por SMS</span></label>
+            </div>
+          </footer>
+          <div class="button-upload"><button type="submit">Gerar convite</button></div>
         </form>
       </main>
     </div>

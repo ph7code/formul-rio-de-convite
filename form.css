@@ -328,3 +328,25 @@ input:checked + .slider:before {
 .contact input:focus-within{
   border: 1px solid var(--brand-light);
 }
+
+footer{
+  margin-top: 3rem;
+
+}
+footer label{
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+footer input{
+  max-width: 1rem;
+  height: 1rem;
+}
+footer label a{
+  color: var(--brand-dark);
+}
+.button-upload{
+  margin-top: 3rem;
+  display: flex;
+  justify-content: flex-end;
+}
