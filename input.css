@@ -26,12 +26,6 @@ input[type="datetime-local"]{
     display: none;
   }
 }
-.droparea-wrapper label{
-  position: relative;
-  & span{
-    
-  }
-}
 .droparea-wrapper input[type="file"]{
   border: none;
   background-color: var(--shape-body);

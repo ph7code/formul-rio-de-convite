@@ -99,6 +99,7 @@
                 </div>
               </fieldset>
               <div class="event-theme">
+                <label for="theme">Tema do evento</label>
                 <fieldset class="event-theme">
                   <div class="article-wrapper">
                     <article>
@@ -202,7 +203,25 @@
                 </div>
               </div>
           </section>
-          <section class="contact-info"></section>
+          <section class="contact-info">
+            <form>
+              <legend> <img src="/globals-css/assets2/contact.svg" alt="imagem de contato"> Dados para contato</legend>
+              <div class="input-wrapper">
+                <label for="name">Nome</label>
+                <input type="text" id="name" placeholder="Nome completo" >
+              </div>
+              <div class="dates contact">
+                <div class="input-wrapper">
+                  <label for="e-mail">E-mail</label>
+                  <input type="email" id="e-mail" name="e-mail" placeholder="Exemplo@email.com">
+                </div>
+                <div class="input-wrapper">
+                  <label id="telefone">Telone</label>
+                  <input type="tel" id="telefone" name="telefone" placeholder="(99) 99999-9999 ">
+                </div>
+              </div>
+            </form>
+          </section>
           <footer></footer>
         </form>
       </main>
